@@ -27,30 +27,7 @@ get_header();
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
     <main class="page-wrapper">
 
-      <!-- NAV START -->
-      <script>
-        (function() {
-            try {
-                const xhr = new XMLHttpRequest();
-                xhr.open("GET", "navbar.html", false); // ❗ Make request synchronous (blocking)
-                xhr.send();
-    
-                if (xhr.status !== 200) throw new Error("Failed to load navbar.html");
-    
-                const temp = document.createElement('div');
-                temp.innerHTML = xhr.responseText;
-    
-                const header = temp.querySelector('.header1');
-                if (!header) throw new Error("Element with class 'header1' not found");
-    
-                const scriptTag = document.currentScript || document.scripts[document.scripts.length - 1];
-                scriptTag.insertAdjacentElement('beforebegin', header);
-            } catch (error) {
-                console.error(error);
-            }
-        })();
-    </script>
-      <!--NAV END -->
+      
       
 
       <!-- CONTEUDO START -->
@@ -608,7 +585,7 @@ function nb_time_or_date( $post_id ) {
           <?php
             $blog_link = get_option('page_for_posts') ? get_permalink( get_option('page_for_posts') ) : get_post_type_archive_link('post');
           ?>
-          <a href="<?php echo esc_url($blog_link); ?>" class="btn btn-lg btn-outline-primary w-sm-auto w-100">Mais Notícias</a>
+          <a href="/noticias" class="btn btn-lg btn-outline-primary w-sm-auto w-100">Mais Notícias</a>
         </div>
       </div>
   <?php else : ?>

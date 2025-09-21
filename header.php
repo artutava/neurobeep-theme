@@ -165,7 +165,7 @@
 <header class="header1 header navbar navbar-expand-lg bg-light shadow-sm fixed-top">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <div class="container px-3">
-      <a href="index.html" class="navbar-brand pe-3">
+      <a href="/" class="navbar-brand pe-3">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" width="220" alt="neurobeep">
       </a>
       <div id="navbarNav" class="offcanvas offcanvas-end">
@@ -202,7 +202,7 @@
               <a href="page-galeria.html" class="nav-link">Galeria</a>
             </li>
             <li class="nav-item">
-              <a href="page-noticias.html" class="nav-link">Notícias</a>
+              <a href="/noticias" class="nav-link">Notícias</a>
             </li>
             <li class="nav-item">
               <a href="page-contato.html" class="nav-link">Contato</a>

@@ -25,76 +25,100 @@
 
       
     </main>
+<script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    try {
+      // 1) carrega o HTML e injeta o widget
+      const response = await fetch('whatsapp-widget.html');
+      if (!response.ok) throw new Error("Falha ao carregar whatsappWidget.html");
+      const html = await response.text();
+      const temp = document.createElement('div');
+      temp.innerHTML = html;
+      document.body.appendChild(temp);
 
-    <script>
-      document.addEventListener("DOMContentLoaded", async () => {
-        try {
-          // 1) carrega o HTML e injeta o widget
-          const response = await fetch('whatsapp-widget.html');
-          if (!response.ok) throw new Error("Falha ao carregar whatsappWidget.html");
-          const html = await response.text();
-          const temp = document.createElement('div');
-          temp.innerHTML = html;
-          document.body.appendChild(temp);
-    
-          // 2) agora que o widget está no DOM, define a função de reposicionamento
-          const widget = document.getElementById('whatsapp-widget');
-          function updatePosition() {
-            const banner = document.getElementById('cookieConsentBanner');
-            if (banner && window.getComputedStyle(banner).display !== 'none') {
-              const h = banner.getBoundingClientRect().height;
-              widget.style.bottom = (h + 16) + 'px';
-            } else {
-              widget.style.bottom = '16px';
-            }
-          }
-    
-          // 3) roda imediatamente
-          updatePosition();
-    
-          // 4) re‐roda quando a janela redimensionar
-          window.addEventListener('resize', updatePosition);
-    
-          // 5) observa mudanças de visibilidade/estilo no banner
-          const banner = document.getElementById('cookieConsentBanner');
-          if (banner) {
-            new MutationObserver(updatePosition)
-              .observe(banner, { attributes: true, attributeFilter: ['style', 'class'] });
-          }
-        } catch (error) {
-          console.error(error);
-        }
-      });
-    </script>
-
-    <!-- Cookie Banner -->
-    <style>#cookieConsentBanner a{color:var(--bs-link-color)!important;text-decoration:underline;}</style>
-    <div id="cookieConsentBanner" class="fixed-bottom bg-body-tertiary text-body border-top shadow-sm">
-      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between py-4">
-        <small class="mb-3 mb-md-0">
-          Utilizamos cookies e coletamos dados pessoais para oferecer uma melhor experiência em nosso site, personalizar conteúdo, entender como você interage conosco e garantir a segurança da sua navegação.<br>
-          Ao continuar, você concorda com nossa <a href="page-privacidade.html" target="_blank">Política de Privacidade</a> e <a href="page-cookies.html" target="_blank">Política de Cookies</a>. Para mais, veja nossos <a href="page-terms.html">Termos de Uso</a>.
-        </small>
-        <div class="btn-group" role="group">
-          <button id="acceptCookiesBtn" class="btn btn-primary">Aceitar todos os cookies</button>
-          <button id="manageCookiesBtn" class="btn btn-secondary">Gerenciar preferências</button>
-          <button id="declineCookiesBtn" class="btn btn-outline-secondary">Recusar cookies opcionais</button>
-        </div>
-      </div>
-    </div>
-    <script>
-      document.addEventListener('DOMContentLoaded',()=>{
+      // 2) agora que o widget está no DOM, define a função de reposicionamento
+      const widget = document.getElementById('whatsapp-widget');
+      function updatePosition() {
         const banner = document.getElementById('cookieConsentBanner');
-        ['acceptCookiesBtn','manageCookiesBtn','declineCookiesBtn'].forEach(id=>{
-          document.getElementById(id).onclick=()=>{
-            banner.style.display='none';
-            const widget = document.getElementById('whatsapp-widget');
-            if(widget) widget.style.bottom='16px';
-            if(id==='manageCookiesBtn') alert('Gerenciar preferências.');
-          };
-        });
-      });
-    </script>
+        if (banner && window.getComputedStyle(banner).display !== 'none') {
+          const h = banner.getBoundingClientRect().height;
+          widget.style.bottom = (h + 16) + 'px';
+        } else {
+          widget.style.bottom = '16px';
+        }
+      }
+
+      // 3) roda imediatamente
+      updatePosition();
+
+      // 4) re‐roda quando a janela redimensionar
+      window.addEventListener('resize', updatePosition);
+
+      // 5) observa mudanças de visibilidade/estilo no banner
+      const banner = document.getElementById('cookieConsentBanner');
+      if (banner) {
+        new MutationObserver(updatePosition)
+          .observe(banner, { attributes: true, attributeFilter: ['style', 'class'] });
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  });
+</script>
+
+<!-- Cookie Banner -->
+<style>
+  #cookieConsentBanner a {
+    color: var(--bs-link-color) !important;
+    text-decoration: underline;
+  }
+</style>
+
+<div id="cookieConsentBanner" class="fixed-bottom bg-body-tertiary text-body border-top shadow-sm">
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between py-4">
+    <small class="mb-3 mb-md-0">
+      Utilizamos cookies e coletamos dados pessoais para oferecer uma melhor experiência em nosso site,
+      personalizar conteúdo, entender como você interage conosco e garantir a segurança da sua navegação.<br>
+      Ao continuar, você concorda com nossa
+      <a href="page-privacidade.html" target="_blank">Política de Privacidade</a> e
+      <a href="page-cookies.html" target="_blank">Política de Cookies</a>.
+      Para mais, veja nossos <a href="page-terms.html">Termos de Uso</a>.
+    </small>
+    <div class="btn-group" role="group">
+      <button id="acceptCookiesBtn" class="btn btn-primary">Aceitar todos os cookies</button>
+      <button id="manageCookiesBtn" class="btn btn-secondary">Gerenciar preferências</button>
+      <button id="declineCookiesBtn" class="btn btn-outline-secondary">Recusar cookies opcionais</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const banner = document.getElementById('cookieConsentBanner');
+
+    // 1) Verifica se já existe uma decisão salva
+    if (localStorage.getItem('cookieConsent')) {
+      banner.style.display = 'none';
+    }
+
+    // 2) Lida com os botões
+    ['acceptCookiesBtn', 'manageCookiesBtn', 'declineCookiesBtn'].forEach(id => {
+      document.getElementById(id).onclick = () => {
+        banner.style.display = 'none';
+        const widget = document.getElementById('whatsapp-widget');
+        if (widget) widget.style.bottom = '16px';
+
+        // Salva a decisão (aceito, recusei ou gerenciei)
+        localStorage.setItem('cookieConsent', id);
+
+        if (id === 'manageCookiesBtn') {
+          alert('Gerenciar preferências.');
+        }
+      };
+    });
+  });
+</script>
+
 
 
 
