@@ -184,28 +184,28 @@
                   </div> -->
                   <div class="mega-dropdown-column pt-lg-3 pb-lg-4" style="--si-mega-dropdown-column-width: 15rem;">
                     <ul class="list-unstyled mb-0">
-                      <li><a href="page-quem-somos.html" class="dropdown-item">Quem somos?</a></li>
-                      <li><a href="page-equipes.html" class="dropdown-item">Equipes</a></li>
-                      <li><a href="page-parceiros.html" class="dropdown-item">Parceiros</a></li>
-                      <li><a href="page-eixos-estruturantes.html" class="dropdown-item">Eixos Estruturantes</a></li>
-                      <li><a href="page-laboratorios.html" class="dropdown-item">Laboratórios</a></li>
-                      <li><a href="page-linhas-tematicas.html" class="dropdown-item">Linhas Temáticas</a></li>
+                      <li><a href="quem-somos" class="dropdown-item">Quem somos?</a></li>
+                      <li><a href="equipes" class="dropdown-item">Equipes</a></li>
+                      <li><a href="parceiros" class="dropdown-item">Parceiros</a></li>
+                      <li><a href="eixos-estruturantes" class="dropdown-item">Eixos Estruturantes</a></li>
+                      <li><a href="laboratorios" class="dropdown-item">Laboratórios</a></li>
+                      <li><a href="linhas-tematicas" class="dropdown-item">Linhas Temáticas</a></li>
                    </ul>
                   </div>
                 </div>
               </div>
             </li>
             <li class="nav-item">
-              <a href="page-painel.html" class="nav-link">Painel</a>
+              <a href="/painel" class="nav-link">Painel</a>
             </li>
             <li class="nav-item">
-              <a href="page-galeria.html" class="nav-link">Galeria</a>
+              <a href="/galeria" class="nav-link">Galeria</a>
             </li>
             <li class="nav-item">
               <a href="/noticias" class="nav-link">Notícias</a>
             </li>
             <li class="nav-item">
-              <a href="page-contato.html" class="nav-link">Contato</a>
+              <a href="/contato" class="nav-link">Contato</a>
             </li>
           </ul>
         </div>
