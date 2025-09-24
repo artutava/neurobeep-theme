@@ -1,50 +1,5 @@
 <?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package neurobeep
- */
-
-
-
 get_header();
-
-// 1) Configs
-$FALLBACK = get_template_directory_uri() . '/assets/img/blog/01.jpg';
-
-// helper p/ data
-function nb_time_or_date($post_id) {
-  $t = get_the_time('U', $post_id);
-  $d = current_time('timestamp') - $t;
-  if ($d < WEEK_IN_SECONDS) return human_time_diff($t, current_time('timestamp')) . ' atrás';
-  return get_the_date('j \d\e F \d\e Y', $post_id);
-}
-
-// 2) Paginação + filtros vindos da URL
-$paged = max(1, get_query_var('paged') ?: get_query_var('page'));
-$args  = [
-  'post_type'      => 'post',              // <- força posts
-  'posts_per_page' => 10,
-  'paged'          => $paged,
-];
-
-// Filtro de categoria via ?cat=ID
-$cat_qs = isset($_GET['cat']) ? (int) $_GET['cat'] : 0;
-if ($cat_qs) $args['cat'] = $cat_qs;
-
-// Busca via ?s=term (mantém compatível com search do WP)
-$s_qs = get_query_var('s');
-if (!empty($s_qs)) $args['s'] = $s_qs;
-
-$q = new WP_Query($args);
-
 ?>
 
     <!-- Page loading spinner -->
