@@ -51,7 +51,7 @@ get_header();
             </a>
           </div>
           <span class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-35"></span>
-          <img src="assets/img/landing/digital-agency/back_neuroibeep_video.jpg" class="d-block w-100" alt="Cover image">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/landing/digital-agency/back_neuroibeep_video.jpg" class="d-block w-100" alt="Cover image">
         </div>
       </section>
 
@@ -70,8 +70,9 @@ get_header();
           <!-- Project Management -->
           <div class="tab-pane fade show active" id="project-management" role="tabpanel" aria-labelledby="project-management-tab">
             <div class="row align-items-center px-3 px-sm-4 px-lg-0">
-              <div class="col-lg-4 col-md-5 offset-lg-1 text-center text-md-start">
+              <p class="fs-lg pe-lg-4 mb-1 mb-lg-4">
                 <p>O Kit NeuroBeep 2C é um conjunto de recursos tecnológicos e educacionais que acompanha a plataforma, desenvolvido para ser utilizado diretamente por crianças em ambiente escolar ou domiciliar. Ele é composto por um capacete EEG de baixo custo, sensores adaptáveis, um robô educacional controlado por interface cérebro-máquina e materiais pedagógicos gamificados.</p>
+              </p>
               </div>
               <div class="col">
                 <div id="three-container"></div>
@@ -105,7 +106,7 @@ get_header();
           <div class="col">
             <div class="card border-0 shadow-sm p-3 d-flex flex-row align-items-center justify-content-between">
               <div class="d-flex align-items-center">
-                <img src="assets/img/neuro/neuro_icon_download-100.jpg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/neuro/neuro_icon_download-100.jpg"
                     class="rounded-3 me-3"
                     width="84"
                     alt="Estatuto">
@@ -114,7 +115,7 @@ get_header();
                   <small class="fs-sm text-muted">Texto descritivo do Estatuto</small>
                 </div>
               </div>
-              <a href="assets/docs/estatuto.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Estatuto">
+              <a href="<?php echo get_template_directory_uri(); ?>/assets/docs/estatuto.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Estatuto">
                 <i class="bx bx-download"></i>
               </a>
             </div>
@@ -124,7 +125,7 @@ get_header();
           <div class="col">
             <div class="card border-0 shadow-sm p-3 d-flex flex-row align-items-center justify-content-between">
               <div class="d-flex align-items-center">
-                <img src="assets/img/neuro/neuro_icon_download-100.jpg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/neuro/neuro_icon_download-100.jpg"
                     class="rounded-3 me-3"
                     width="84"
                     alt="Regimento">
@@ -133,7 +134,7 @@ get_header();
                   <small class="fs-sm text-muted">Texto descritivo do Regimento</small>
                 </div>
               </div>
-              <a href="assets/docs/regimento.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Regimento">
+              <a href="<?php echo get_template_directory_uri(); ?>/assets/docs/regimento.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Regimento">
                 <i class="bx bx-download"></i>
               </a>
             </div>
@@ -143,7 +144,7 @@ get_header();
           <div class="col">
             <div class="card border-0 shadow-sm p-3 d-flex flex-row align-items-center justify-content-between">
               <div class="d-flex align-items-center">
-                <img src="assets/img/neuro/neuro_icon_download-100.jpg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/neuro/neuro_icon_download-100.jpg"
                     class="rounded-3 me-3"
                     width="84"
                     alt="Manual">
@@ -152,7 +153,7 @@ get_header();
                   <small class="fs-sm text-muted">Descrição do Manual</small>
                 </div>
               </div>
-              <a href="assets/docs/manual.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Manual">
+              <a href="<?php echo get_template_directory_uri(); ?>/assets/docs/manual.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Manual">
                 <i class="bx bx-download"></i>
               </a>
             </div>
@@ -162,7 +163,7 @@ get_header();
           <div class="col">
             <div class="card border-0 shadow-sm p-3 d-flex flex-row align-items-center justify-content-between">
               <div class="d-flex align-items-center">
-                <img src="assets/img/neuro/neuro_icon_download-100.jpg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/neuro/neuro_icon_download-100.jpg"
                     class="rounded-3 me-3"
                     width="84"
                     alt="Relatório Anual">
@@ -171,7 +172,7 @@ get_header();
                   <small class="fs-sm text-muted">Descrição do Relatório</small>
                 </div>
               </div>
-              <a href="assets/docs/relatorio-anual.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Relatório Anual">
+              <a href="<?php echo get_template_directory_uri(); ?>/assets/docs/relatorio-anual.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Relatório Anual">
                 <i class="bx bx-download"></i>
               </a>
             </div>
@@ -181,7 +182,7 @@ get_header();
           <div class="col">
             <div class="card border-0 shadow-sm p-3 d-flex flex-row align-items-center justify-content-between">
               <div class="d-flex align-items-center">
-                <img src="assets/img/neuro/neuro_icon_download-100.jpg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/neuro/neuro_icon_download-100.jpg"
                     class="rounded-3 me-3"
                     width="84"
                     alt="Planejamento Estratégico">
@@ -190,7 +191,7 @@ get_header();
                   <small class="fs-sm text-muted">Descrição do Planejamento</small>
                 </div>
               </div>
-              <a href="assets/docs/planejamento-estrategico.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Planejamento Estratégico">
+              <a href="<?php echo get_template_directory_uri(); ?>/assets/docs/planejamento-estrategico.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Planejamento Estratégico">
                 <i class="bx bx-download"></i>
               </a>
             </div>
@@ -200,7 +201,7 @@ get_header();
           <div class="col">
             <div class="card border-0 shadow-sm p-3 d-flex flex-row align-items-center justify-content-between">
               <div class="d-flex align-items-center">
-                <img src="assets/img/neuro/neuro_icon_download-100.jpg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/neuro/neuro_icon_download-100.jpg"
                     class="rounded-3 me-3"
                     width="84"
                     alt="Ata de Reunião">
@@ -209,7 +210,7 @@ get_header();
                   <small class="fs-sm text-muted">Descrição da Ata</small>
                 </div>
               </div>
-              <a href="assets/docs/ata-reuniao.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Ata de Reunião">
+              <a href="<?php echo get_template_directory_uri(); ?>/assets/docs/ata-reuniao.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Ata de Reunião">
                 <i class="bx bx-download"></i>
               </a>
             </div>
@@ -219,7 +220,7 @@ get_header();
           <div class="col">
             <div class="card border-0 shadow-sm p-3 d-flex flex-row align-items-center justify-content-between">
               <div class="d-flex align-items-center">
-                <img src="assets/img/neuro/neuro_icon_download-100.jpg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/neuro/neuro_icon_download-100.jpg"
                     class="rounded-3 me-3"
                     width="84"
                     alt="Termo de Acordo">
@@ -228,7 +229,7 @@ get_header();
                   <small class="fs-sm text-muted">Descrição do Termo</small>
                 </div>
               </div>
-              <a href="assets/docs/termo-acordo.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Termo de Acordo">
+              <a href="<?php echo get_template_directory_uri(); ?>/assets/docs/termo-acordo.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Termo de Acordo">
                 <i class="bx bx-download"></i>
               </a>
             </div>
@@ -238,7 +239,7 @@ get_header();
           <div class="col">
             <div class="card border-0 shadow-sm p-3 d-flex flex-row align-items-center justify-content-between">
               <div class="d-flex align-items-center">
-                <img src="assets/img/neuro/neuro_icon_download-100.jpg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/neuro/neuro_icon_download-100.jpg"
                     class="rounded-3 me-3"
                     width="84"
                     alt="Política Interna">
@@ -247,7 +248,7 @@ get_header();
                   <small class="fs-sm text-muted">Descrição da Política Interna</small>
                 </div>
               </div>
-              <a href="assets/docs/politica-interna.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Política Interna">
+              <a href="<?php echo get_template_directory_uri(); ?>/assets/docs/politica-interna.pdf" download class="btn btn-icon btn-secondary ms-3 flex-shrink-0" aria-label="Download Política Interna">
                 <i class="bx bx-download"></i>
               </a>
             </div>

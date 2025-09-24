@@ -12,17 +12,17 @@ get_header();
 
     <!-- Page wrapper for sticky footer -->
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
-<main class="page-wrapper">
+      <main class="page-wrapper">
 
-  <!-- Breadcrumb -->
-  <nav class="container mt-lg-4 pt-5" aria-label="breadcrumb">
-    <ol class="breadcrumb mb-0 pt-5">
-      <li class="breadcrumb-item">
-        <a href="<?php echo esc_url(home_url('/')); ?>"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
-      </li>
-      <li class="breadcrumb-item active" aria-current="page">Painel</li>
-    </ol>
-  </nav>
+        <!-- Breadcrumb -->
+        <nav class="container mt-lg-4 pt-5" aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0 pt-5">
+            <li class="breadcrumb-item">
+              <a href="<?php echo esc_url(home_url('/')); ?>"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Painel</li>
+          </ol>
+        </nav>
 
         <!-- Page title + Filters -->
 
