@@ -70,7 +70,7 @@ $q = new WP_Query($args);
         <nav class="container py-4 mb-2 my-lg-3" aria-label="breadcrumb">
           <ol class="breadcrumb mt-5">
             <li class="breadcrumb-item">
-              <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+              <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
             </li>
             <li class="breadcrumb-item active" aria-current="page">Eixos Estruturantes</li>
           </ol>

@@ -90,7 +90,7 @@ get_header();
         <div class="col-md-6 col-xl-5 text-center text-md-start">
           <h3 class="display-7 mb-4"><span class="text-gradient-primary">Habilitar crianças em processos de ensino-aprendizagem</span></h3>
           <p class="fs-lg pb-4 mb-0">O NeuroBeep é um projeto transformador que integra avanços em neurociência e tecnologia assistiva para criar soluções inovadoras que permitam a crianças com paralisia cerebral severa participar ativamente de processos educacionais mediados por robótica.</p>
-          <a href="page-quem-somos.html" class="btn btn-outline-primary mt-1">
+          <a href="quem-somos" class="btn btn-outline-primary mt-1">
             Leia mais
             <i class="bx bx-chevron-right fs-lg ms-2 me-n2"></i>
           </a>
@@ -227,7 +227,7 @@ get_header();
 
           <!-- Item -->
           <div class="masonry-grid-item col-md-4 col-sm-6 col-12">
-            <a href="page-nossas-acoes.html" class="card card-portfolio card-hover bg-transparent border-0">
+            <a href="nossas-acoes" class="card card-portfolio card-hover bg-transparent border-0">
               <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
                 <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-80 rounded-3"></span>
                 <div class="position-relative zindex-2">
@@ -257,7 +257,7 @@ get_header();
 
           <!-- Item -->
           <div class="masonry-grid-item col-md-8 col-12">
-            <a href="page-neurobeep-2C.html" class="card card-portfolio card-hover bg-transparent border-0">
+            <a href="neurobeep-2c" class="card card-portfolio card-hover bg-transparent border-0">
               <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
                 <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-80 rounded-3"></span>
                 <div class="position-relative zindex-2">
@@ -272,7 +272,7 @@ get_header();
         </div>
 
         <div class="pt-md-3 pt-2 text-center">
-          <a href="page-painel.html" class="btn btn-lg btn-primary w-sm-auto w-100">Explorar tudo</a>
+          <a href="painel" class="btn btn-lg btn-primary w-sm-auto w-100">Explorar tudo</a>
         </div>
       </section>
 
@@ -602,7 +602,7 @@ function nb_time_or_date( $post_id ) {
                 <h3 class="h4 fw-normal opacity-75">Quer contribuir para o projeto?</h3>
                 <a href="mailto:email@example.com" class="display-6">neurobeep.debm@ufpe.br</a>
                 <div class="pt-md-5 pt-4 pb-md-2">
-                  <a href="page-contato.html" class="btn btn-lg btn-outline-secondary w-sm-auto w-100">Nosso Contato</a>
+                  <a href="contato" class="btn btn-lg btn-outline-secondary w-sm-auto w-100">Nosso Contato</a>
                 </div>
               </div>
             </div>
