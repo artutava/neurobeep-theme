@@ -45,7 +45,7 @@ get_header();
             <!-- Item -->
             <div class="col-md-5 mb-4">
               <div class="card card-portfolio">
-                <a href="page-nossas-acoes.html" class="card card-portfolio card-hover bg-transparent border-0">
+                <a href="/nossas-acoes" class="card card-portfolio card-hover bg-transparent border-0">
                   <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
                     <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-80 rounded-3"></span>
                     <div class="position-relative zindex-2">
@@ -98,7 +98,7 @@ get_header();
             <!-- Item -->
             <div class="col-md-5 mb-4">
               <div class="card card-portfolio">
-                <a href="page-extensao-universitaria.html" class="card card-portfolio card-hover bg-transparent border-0">
+                <a href="/extensao-universitaria" class="card card-portfolio card-hover bg-transparent border-0">
                   <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
                     <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-80 rounded-3"></span>
                     <div class="position-relative zindex-2">
@@ -116,7 +116,7 @@ get_header();
             <!-- Item -->
             <div class="col-md-5 mb-4">
               <div class="card card-portfolio">
-                <a href="page-neurobeep-2C.html" class="card card-portfolio card-hover bg-transparent border-0">
+                <a href="/neurobeep-2C" class="card card-portfolio card-hover bg-transparent border-0">
                   <div class="card-img-overlay d-flex flex-column align-items-center justify-content-center rounded-3">
                     <span class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-80 rounded-3"></span>
                     <div class="position-relative zindex-2">
